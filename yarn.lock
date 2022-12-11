@@ -5671,10 +5671,10 @@ ddswap-default-token-list@^1.0.0:
   resolved "https://registry.yarnpkg.com/ddswap-default-token-list/-/ddswap-default-token-list-1.0.1.tgz#768c38b996ac7073cfec6b3027dfa7f8ec8b2960"
   integrity sha512-3VETfWk2xjPntdc9v5pQROWiOoQVJG0Hn99HTermRg1SaIXF4sasbTTL74MLx2+WSTubY80bvlwzHJS6ePIkqQ==
 
-ddswap-sdk@^1.2.4:
-  version "1.2.4"
-  resolved "https://registry.yarnpkg.com/ddswap-sdk/-/ddswap-sdk-1.2.4.tgz#6b5b9fa25fe3847de5e4cc460539a5274fa91a22"
-  integrity sha512-hAMm7OMwGTuzAs2MyboLfzx/kwWTxjYCqwpOyoNFcfn3E7RkYpFu5zb+xFNtgt2GawnQCt6yswk+92EZI1Do8Q==
+ddswap-sdk@^1.2.6:
+  version "1.2.6"
+  resolved "https://registry.yarnpkg.com/ddswap-sdk/-/ddswap-sdk-1.2.6.tgz#1126340402baa3a6f0b506ddba853aec8495bd02"
+  integrity sha512-ajt8QzeS3fMdvyPHWOYwTesukOCkiRyF9rGk6ALKJl6Ubq1FLnPZwqWLUXB6s3czXKswzs3WFngETuL/byDxsA==
   dependencies:
     "@uniswap/v2-core" "^1.0.0"
     big.js "^5.2.2"
