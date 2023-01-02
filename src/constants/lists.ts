@@ -2,7 +2,7 @@
 export const DEFAULT_TOKEN_LIST_URL = 'tokens.uniswap.eth'
 
 export const DEFAULT_LIST_OF_LISTS: string[] = [
-  'https://www.dsme.vip/swap/src/constants/tokenlist.json',
+  'https://assets.dsme.world/token-list/dsme/tokenlist.json',
   DEFAULT_TOKEN_LIST_URL,
   't2crtokens.eth', // kleros
   'tokens.1inch.eth', // 1inch
