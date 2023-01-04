@@ -11,9 +11,26 @@ import useHttpLocations from '../../hooks/useHttpLocations'
 import { WrappedTokenInfo } from '../../state/lists/hooks'
 import Logo from '../Logo'
 
-const getTokenLogoURL = (address: string) =>
-  `https://www.dsme.vip/assest/ethereum/assest/${address}/logo.png`
-  /*`https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/ethereum/assets/${address}/logo.png`*/
+
+
+//通过chainid切换token-info的地址
+const getTokenLogoURL = (address: string,chainId: number | undefined) =>{
+  
+  if(chainId === 1 ){
+    return  `https://assets.dsme.world/token-info/ethereum/${address}/logo.png`
+  }else if(chainId === 1030 ){
+    return  `https://assets.dsme.world/token-info/conflux_espace/${address}/logo.png`
+  }else if(chainId === 128 ){
+    return  `https://assets.dsme.world/token-info/heco/${address}/logo.png`
+  }else if(chainId === 56){
+    return  `https://assets.dsme.world/token-info/binance/${address}/logo.png`
+  }else if(chainId === 71){
+    return  `https://assets.dsme.world/token-info/conflux_espace_test/${address}/logo.png`
+  }
+
+  return  `https://assets.dsme.world/token-info/ethereum/${address}/logo.png`
+}
+
 
 const StyledEthereumLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};
@@ -38,8 +55,10 @@ export default function CurrencyLogo({
   style?: React.CSSProperties
 }) {
   
-  //获取chainid
+  
   const uriLocations = useHttpLocations(currency instanceof WrappedTokenInfo ? currency.logoURI : undefined)
+
+  //获取chainid
   const {chainId} = useWeb3React()
 
   const srcs: string[] = useMemo(() => {
@@ -47,13 +66,13 @@ export default function CurrencyLogo({
 
     if (currency instanceof Token) {
       if (currency instanceof WrappedTokenInfo) {
-        return [...uriLocations, getTokenLogoURL(currency.address)]
+        return [...uriLocations, getTokenLogoURL(currency.address,chainId)]
       }
 
-      return [getTokenLogoURL(currency.address)]
+      return [getTokenLogoURL(currency.address,chainId)]
     }
     return []
-  }, [currency, uriLocations])
+  }, [currency, uriLocations,chainId])
 
   //通过chainid切换coinlogo
   if (currency === ETHER) {
