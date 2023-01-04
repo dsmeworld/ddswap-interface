@@ -84,6 +84,8 @@ export default function CurrencyLogo({
       return <StyledEthereumLogo src={HtLogo} size={size} style={style} />
     }else if(chainId === 56){
       return <StyledEthereumLogo src={BnbLogo} size={size} style={style} />
+    }else if(chainId === 71){
+      return <StyledEthereumLogo src={ConfluxLogo} size={size} style={style} />
     }
     else{
       return <StyledEthereumLogo src={EthereumLogo} size={size} style={style} />
@@ -91,4 +93,26 @@ export default function CurrencyLogo({
   }
 
   return <StyledLogo size={size} srcs={srcs} alt={`${currency?.symbol ?? 'token'} logo`} style={style} />
+}
+
+
+export function CurrencyETH(){
+    //获取chainid 
+    const {chainId} = useWeb3React()
+
+    //通过chainid切换coinlogo
+    if(chainId === 1 ){
+      return <>ETH</>
+    }else if(chainId === 1030 ){
+      return <>CFX</>
+    }else if(chainId === 128 ){
+      return <>HT</>
+    }else if(chainId === 56){
+      return <>BNB</>
+    }else if(chainId === 71){
+      return <>CFX</>
+    }
+    else{
+      return <>ETH</>
+    }
 }
