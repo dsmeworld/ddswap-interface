@@ -78,7 +78,7 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/dsmeworld/ddswap-interface'
+const CODE_LINK = 'https://url.dsme.space/CodeUrl'
 
 export default function Menu() {
   const node = useRef<HTMLDivElement>()
@@ -94,11 +94,11 @@ export default function Menu() {
       </StyledMenuButton>
       {open && (
         <MenuFlyout>
-          <MenuItem id="link" href="https://www.dsme.world">
+          <MenuItem id="link" href="https://url.dsme.space/InfoUrl">
             <Info size={14} />
             About
           </MenuItem>
-          <MenuItem id="link" href="https://docs.dsme.world/">
+          <MenuItem id="link" href="https://url.dsme.space/DocsUrl">
             <BookOpen size={14} />
             Docs
           </MenuItem>
@@ -106,15 +106,15 @@ export default function Menu() {
             <Code size={14} />
             Code
           </MenuItem>
-          <MenuItem id="link" href="https://twitter.com/Dsmeworld">
+          <MenuItem id="link" href="https://url.dsme.space/TwitterUrl">
             <MessageCircle size={14} />
             Twitter
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/4hS8surZSd">
+          <MenuItem id="link" href="https://url.dsme.space/DiscordUrl">
             <PieChart size={14} />
             Discord
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/dsmeworld">
+          <MenuItem id="link" href="https://url.dsme.space/TelegramUrl">
             <PieChart size={14} />
             Telegram
           </MenuItem>

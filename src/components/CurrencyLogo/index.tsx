@@ -17,18 +17,18 @@ import Logo from '../Logo'
 const getTokenLogoURL = (address: string,chainId: number | undefined) =>{
   
   if(chainId === 1 ){
-    return  `https://assets.dsme.world/token-info/ethereum/${address}/logo.png`
+    return  `https://assets.dsme.space/token-info/ethereum/${address}/logo.png`
   }else if(chainId === 1030 ){
-    return  `https://assets.dsme.world/token-info/conflux_espace/${address}/logo.png`
+    return  `https://assets.dsme.space/token-info/conflux_espace/${address}/logo.png`
   }else if(chainId === 128 ){
-    return  `https://assets.dsme.world/token-info/heco/${address}/logo.png`
+    return  `https://assets.dsme.space/token-info/heco/${address}/logo.png`
   }else if(chainId === 56){
-    return  `https://assets.dsme.world/token-info/binance/${address}/logo.png`
+    return  `https://assets.dsme.space/token-info/binance/${address}/logo.png`
   }else if(chainId === 71){
-    return  `https://assets.dsme.world/token-info/conflux_espace_test/${address}/logo.png`
+    return  `https://assets.dsme.space/token-info/conflux_espace_test/${address}/logo.png`
   }
 
-  return  `https://assets.dsme.world/token-info/ethereum/${address}/logo.png`
+  return  `https://assets.dsme.space/token-info/ethereum/${address}/logo.png`
 }
 
 

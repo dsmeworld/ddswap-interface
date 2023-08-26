@@ -2,14 +2,14 @@
 
 An open source interface for DDswap -- a protocol for decentralized exchange of Ethereum tokens.
 
-- Website: [dsme.vip](https://www.dsme.vip/)
-- Twitter: [@Decologys](https://twitter.com/Decologys)
-- Email: [admin@dsme.vip](mailto:admin@dsme.vip)
+- Website: [dsme.vip](https://url.dsme.space/InfoUrl)
+- Twitter: [@Decologys](https://url.dsme.space/TwitterUrl)
+- Email: [admin@dsme.vip](mailto:admin@dsme.space)
 
 ## Listing a token
 
 Please see the
-[ddswap-default-token-list](https://github.com/decology/ddswap-default-token-list) 
+[ddswap-default-token-list](https://github.com/dsmeworld/ddswap-default-token-list) 
 repository.
 
 ### Install Dependencies
